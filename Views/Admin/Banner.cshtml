@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                    <i class="mdi mdi-home"></i>
+                </span>Banner
+            </h3>
+
+        </div>
+    
+      <a href="/Admin/Create"  class="btn btn-primary mb-4">ADD NEW</a>
+        <div class="card">
+            <div class="card-body">
+    <table  class="table table-scripted">
+        <thead>
+            <tr>
+        <th>Id</th>
+        <th>Banner Subdescription</th>
+        <th>Banner Description</th>
+        <th>Banner Image</th>
+         <th>Action</th>
+        </tr>
+        </thead>
+     
+        <tbody>
+            @foreach (var item in ViewBag.list)
+            {
+                <tr>
+                    <td> @item.id </td>
+                    <td> @item.banner_subdescription</td>
+                    <td>@item.banner_description</td>
+                    <td><img src="~/@item.banner_image" /></td>
+                    <td><a href="#" class="btn btn-success  me-2">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+    </div>
+    </div>
+</div>
+

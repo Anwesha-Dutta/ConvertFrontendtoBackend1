@@ -1,0 +1,769 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!--<-->@*table width="100%" border="1" style="background-color:coral">
+    <thead>
+        <th>Id</th>
+        <th>Banner Subdescription</th>
+        <th>Banner Description</th>
+        <th>Banner Image</th>
+   <thead></thead>
+
+    <tbody>
+@foreach(var item in ViewBag.list)
+            {
+        <tr>
+             <td> @item.id </td>
+              <td> @item.banner_subdescription</td>
+               <td>@item.banner_description</td>
+              <td> @item.banner_image</td>
+
+        </tr>
+            }
+        </tbody>
+  </table>*@
+
+
+<!-- <p class="animate__animated animate__bounce">MULTIPURPOSE THEME</p> -->
+<div class="banner">
+
+
+    <div class="owl-carousel slider owl-theme">
+        @foreach (var item in ViewBag.list)
+        {
+            
+
+        <div class="item">
+            <div class="img"><img src="~/@item.banner_image"></div>
+            <div class="text">
+                <div class="container">
+                    @*<p>MULTIPURPOSE THEME</p>
+                        
+                    <h1>Adventure Is Worthwhile</h1>*@
+                    <p>@item.banner_subdescription </p>
+                    <h1>@item.banner_description</h1>
+                   
+
+                </div>
+            </div>
+        </div>
+
+
+        @*<div class="item">
+            <div class="img"><img src="~/Content/images/secondimg.png"></div>
+            <div class="text">
+                <div class="container">
+                    <p>MULTIPURPOSE THEME</p>
+                    <h1>Traveling Together</h1>
+                </div>
+            </div>
+        </div>*@
+        @*<div class="item">
+            <div class="img"><img src="~/Content/images/thirdimg.jpg"></div>
+            <div class="text">
+                <div class="container">
+                    <p>MULTIPURPOSE THEME</p>
+                    <h1>Just What You Expected</h1>
+                </div>
+            </div>
+        </div>
+        @*<div class="item">
+            <div class="img"><img src="~/Content/images/fourthimg.jpg"></div>
+            <div class="text">
+                <div class="container">
+                    <p>MULTIPURPOSE THEME</p>
+                    <h1>Incredible Journey</h1>
+                </div>
+            </div>
+        </div>*@
+    @*</div>*@
+        }
+</div>
+        
+
+
+
+
+<div class="thirdpart">
+    <div class="container">
+        <h1>Most Popular Tours</h1>
+        <p class="another">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus,
+            euconsectetur neque elit quis nunc.Cras elementum pretium
+        </p>
+
+        <div class="owl-carousel slider2 owl-theme">
+            <div class="item">
+                <img src="~/Content/images/img1.jpg">
+                <div class="insidediv">
+                    <div class="flexfive">
+                        <h2>Contrasts Of Italy</h2>
+                        <h2 class="dolar">$2260</h2>
+                    </div>
+                    <p class="emoji"><i class="fa-regular fa-face-smile"></i> 7.3 Superb</p>
+
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus..
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i> 7 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Content/images/img2.jpg">
+                <div class="insidediv">
+                    <div class="flexfive">
+                        <h2>Cuba Sailing Adventure</h2>
+                        <h2 class="dolar">$1895</h2>
+                    </div>
+                    <p class="emoji"><i class="fa-regular fa-face-smile"></i> 7.3 Superb</p>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus..
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>20 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~Content/images/img3.jpg">
+
+                <div class="insidediv">
+                    <div class="flexfive">
+                        <h2>Italian Dream Tour</h2>
+                        <h2 class="dolar">$795</h2>
+                    </div>
+                    <p class="emoji"><i class="fa-regular fa-face-smile"></i> 7.3 Superb</p>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus..
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>25Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~Content/images/img4.jpg">
+
+
+                <div class="insidediv">
+                    <div class="flexfive">
+                        <h2>Madrid to Rome</h2>
+                        <h2 class="dolar">$2450</h2>
+                    </div>
+
+                    <p class="emoji"><i class="fa-regular fa-face-smile"></i> 7.3 Superb</p>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus..
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>18 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="~/Content/images/home-1-slide-1.jpg">
+                <div class="insidediv">
+                    <div class="flexfive">
+                        <h2>Treasures Of Thiland</h2>
+                        <h2 class="dolar">$1825</h2>
+                    </div>
+                    <p class="emoji"><i class="fa-regular fa-face-meh"></i> 6.3 Good</p>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus..
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>7 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Content/images/thirdimg.jpg">
+                <div class="insidediv">
+                    <div class="flexfive">
+                        <h2>Discover Greece</h2>
+                        <h2 class="dolar">$2260</h2>
+                    </div>
+                    <p class="emoji"><i class="fa-regular fa-face-meh"></i> 6.3 Good</p>
+                    <p class="lorem">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cras solicitudin,tellus vitae condimentum egetas,libero dolor auctor tellus..
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>20 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="fourthpart">
+    <div class="container">
+        <div class="flexleftright">
+            <div class="leftone">
+                <h1>Deals & Discounts</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae
+                    condimentum
+                    elit
+                    egestas,
+                    libero dolor auctor tellus, eu consectetur neque elit quis.
+                </p>
+
+                <div class="imgflex">
+
+                    <div class="col">
+
+                        <div class="image">
+                            <img src="~/Content/images/fourthimg.jpg">
+
+
+                            <div class="rotate">Last Minute</div>
+                            <div class="superb">
+
+                                <p class="emoji"><i class="fa-regular fa-face-smile"></i> 7.0 Superb</p>
+
+                                <div class="headingflex">
+                                    <h2>Highlights of Vietnam</h2>
+                                    <h2>$1430</h2>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Cras sollicitudin, tellus vitae condimentum egestas, libero…
+                                </p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image">
+                            <img src="~/Content/images/img4.jpg">
+                            <div class="rotate">SAVE 15%</div>
+
+                            <div class="superb">
+                                <div class="paraflex">
+                                    <p class="emoji"><i class="fa-regular fa-face-smile"></i> 7.7 Superb</p>
+                                    <p class="linethrough">$960</p>
+                                </div>
+                                <div class="headingflex">
+                                    <h2>Valley of the Kings</h2>
+                                    <h2>$780</h2>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Cras sollicitudin, tellus vitae condimentum egestas, libero…
+                                </p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="rightone">
+
+                <div class="content">
+                    <h1>Top Reviews</h1>
+                    <div class="owl-carousel slider4">
+
+                        <div class="item">
+
+                            <h2>Italian Dream Tour</h2>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <p>
+                                Dolore odit alias in vitae aliquid modi dolorem
+                                distinctio nisi error fuga sed illum quos, nulla corrupti
+                                Dolore odit alias in vitae aliquid modi dolorem
+                            </p>
+                            <div class="divflex">
+                                <div><img src="~/Content/images/person1.jpg"></div>
+                                <p class="post"> Donald Owens</p>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <h2>Iberian Explorer</h2>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <p>
+                                Dolore odit alias in vitae aliquid modi dolorem
+                                distinctio nisi error fuga sed illum quos, nulla corrupti
+                                Dolore odit alias in vitae aliquid modi dolorem
+                            </p>
+                            <div class="divflex">
+                                <div><img src="~/Content/images/person2.jpg"></div>
+                                <p class="post"> Raymond Thomas</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="item">
+
+                            <h2>Jewels of Greece</h2>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <p>
+                                Dolore odit alias in vitae aliquid modi dolorem
+                                distinctio nisi error fuga sed illum quos, nulla corrupti
+                                Dolore odit alias in vitae aliquid modi dolorem
+                            </p>
+                            <div class="divflex">
+                                <div><img src="~/Content/images/person1.jpg"></div>
+                                <p class="post"> Donald Owens</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="item">
+
+                            <h2>Classical Italy</h2>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <p>
+                                Dolore odit alias in vitae aliquid modi dolorem
+                                distinctio nisi error fuga sed illum quos, nulla corrupti
+                                Dolore odit alias in vitae aliquid modi dolorem
+                            </p>
+                            <div class="divflex">
+                                <div><img src="~/Content/images/person2.jpg"></div>
+                                <p class="post">Raymond Thomas</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="item">
+
+                            <h2>Madrid to Rome</h2>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <span> <i class="fa-solid fa-star"></i></span>
+                            <p>
+                                Dolore odit alias in vitae aliquid modi dolorem
+                                distinctio nisi error fuga sed illum quos, nulla corrupti
+                                Dolore odit alias in vitae aliquid modi dolorem
+                            </p>
+                            <div class="divflex">
+                                <div><img src="~Content/images/person1.jpg"></div>
+                                <p class="post"> Donald Owens</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="fifthpart">
+    <div class="container">
+        <h1>Find Your Perfect Tour</h1>
+        <p>
+            Nullam ac justo efficitur, tristique ligula a, pellentesque ipsum. Quisque augue ipsum,
+            vehicula et tellus nec, maximus viverra metus. In sed viverra dui.
+            Suspendisse laoreet velit at eros eleifend.
+        </p>
+
+
+
+        <ul class="flexul">
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">BUDGET FRIENDLY</a></li>
+            <li><a href="#">ESCORTED TOURS</a></li>
+            <li><a href="#">RECOMMENDED</a></li>
+        </ul>
+
+
+
+        <div class="fleximage">
+            <div class="picture">
+                <img src="~/Content/images/Pic1.jpg">
+
+                <div class="class">
+                    <div class="flexthree">
+                        <h5>Taste of Britain</h5>
+                        <h5 class="symbol">$1180</h5>
+                    </div>
+                    <p class="regular"><i class="fa-regular fa-face-smile"></i> 7.7 Superb</p>
+                    <p class="ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        sollicitudin,
+                        tellus…
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>7 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+
+            </div>
+
+            <div class="picture">
+                <div class="together">
+                    <img src="~/Content/images/Pic2.jpg">
+                    <div class="rotate">Last Minute</div>
+                </div>
+                <div class="class">
+                    <div class="flexthree">
+                        <h5>The Venice Experience</h5>
+
+
+                        <h5 class="symbol">$1360</h5>
+                    </div>
+                    <p class="regular"><i class="fa-regular fa-face-smile"></i> 7.0 Superb</p>
+                    <p class="ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        sollicitudin,
+                        tellus…
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i>7 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+            </div>
+            <div class="picture">
+                <img src="~/Content/images/Pic3.jpg">
+
+                <div class="class">
+                    <div class="flexthree">
+                        <h5>Taiwan Land Tour</h5>
+
+
+                        <h5 class="symbol">$2120</h5>
+                    </div>
+                    <p class="regular"><i class="fa-regular fa-face-meh"></i> 6.7 Good</p>
+                    <p class="ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        sollicitudin,
+                        tellus…
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i> 14 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fleximage2">
+
+            <div class="picture">
+                <div class="together">
+                    <img src="~/Content/images/Pic4.jpg">
+                    <div class="rotate">Last Minute</div>
+                </div>
+                <div class="class">
+                    <div class="flexthree">
+                        <h5>Spain’s Costa del Sol</h5>
+
+
+                        <h5 class="symbol">$1750</h5>
+                    </div>
+                    <p class="regular"><i class="fa-regular fa-face-smile"></i> 9.3 Superb</p>
+                    <p class="ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        sollicitudin,
+                        tellus…
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i> 15 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+
+
+
+            </div>
+            <div class="picture">
+                <img src="~/Content/images/pic5.jpg">
+                <div class="class">
+                    <div class="flexthree">
+                        <h5>Paris Honeymoon Tour</h5>
+
+
+                        <h5 class="symbol">$1840</h5>
+                    </div>
+                    <p class="regular"><i class="fa-regular fa-face-meh"></i> 6.3 Good</p>
+                    <p class="ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        sollicitudin,
+                        tellus…
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i> 7 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+
+            </div>
+            <div class="picture">
+                <div class="together">
+                    <img src="~/Content/images/thirdimg.jpg">
+                    <div class="rotate1">Special Offer</div>
+                </div>
+                <div class="class">
+                    <div class="flexthree">
+                        <h5>Tours In Ethiopia</h5>
+
+
+                        <h5 class="symbol">$1670</h5>
+                    </div>
+                    <p class="regular"><i class="fa-regular fa-face-smile"></i> 7.0 Superb</p>
+                    <p class="ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        sollicitudin,
+                        tellus…
+                    </p>
+
+                    <span><i class="fa-solid fa-rotate-right"></i> 12 Days</span>
+                    <span><i class="fa-regular fa-user"></i> 12+</span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <p class="auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin,
+            tellus vitae condimentum egestas, libero dolor auctor tellus, eu consectetur neque elit quis
+            nunc.
+            Cras elementum pretium.
+        </p>
+
+        <button>VIEW ALL TOURS</button>
+
+
+    </div>
+</div>
+
+
+<div class="sixthpart">
+    <button class="playbutton">
+        <i class="fa-solid fa-play"></i>
+    </button>
+    <h1>Watch Video</h1>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qipxi1Qn8iE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="seventhpart">
+    <div class="container">
+        <h1>Other Useful Information</h1>
+        <p class="bottom">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            Aenean
+            sollicitudin,
+            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+        </p>
+
+
+
+        <div class="pic">
+            <div class="flexagain">
+
+
+                <div class="leftpart">
+
+                    <div class="imageflex">
+                        <div class="para">
+                            <img src="~/Content/images/Pic3.jpg">
+                            <h2>Private Guide Tour</h2>
+                            <p>
+                                Duis dolor est, tincidunt vel enim sit amet, venenatis euismod neque.
+                                Duis eleifend ligula id tortor finibus faucibus.
+                                Donec et quam pulvinar, blandit tortor.
+                            </p>
+
+                        </div>
+
+                        <div class="para">
+                            <img src="~/Content/images/pic5.jpg">
+                            <h2>Special Activities</h2>
+                            <p>
+                                Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem,
+                                vel molestie ligula enim varius est.
+                                Pellentesque sodales ipsum nisi suspendisse ultrices.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="rightpart">
+                    <div class="paragraph">
+                        <p class="ipsum">Sightseeing Tour Booking</p>
+                        <p class="ipsum">Paris Honeymoon</p>
+                        <p class="ipsum">South Africa Adventure</p>
+                        <p class="ipsum">Easter Island Special Offer</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="eightpart">
+
+    <div class="container">
+        <h1>Interesting Facts</h1>
+        <p>
+            Nullam ac justo efficitur, tristique ligula a, pellentesque ipsum. Quisque augue ipsum,
+            vehicula et tellus nec, maximus viverra metus.
+            In sed viverra dui. Suspendisse laoreet velit at eros eleifend.
+        </p>
+
+
+
+
+        <div class="owl-carousel slider3">
+            <div class="item">
+                <img src="~/Content/images/carousel-1-5.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">London</p>
+                    <p class="normal">"Big Ben" is not the tower.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel 2.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">India</p>
+                    <p class="normal">In West Bengal cows must have an ID card.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel3.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">New York</p>
+                    <p class="normal">The Statue of Liberty is 101 feet tall.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel4.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">Maxico</p>
+                    <p class="normal">Chihuahua is the name of a Maxican state</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel5.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">Italy</p>
+                    <p class="normal">Pizza was invented in Naples</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel6.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">San Francisco</p>
+                    <p class="normal">San Francisco was a part of Maxico</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel7png.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">Germany</p>
+                    <p class="normal">Beer is typical bavarian drink</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel8.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">France</p>
+                    <p class="normal">Is the most visited contry in the World</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel9.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+
+                    <p class="bold">Japan</p>
+                    <p class="normal">Consists of over 6,800 islands</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel10png.png">
+                <div class="binding">
+                    <div class="arrow"></div>
+                    <p class="bold">China</p>
+                    <p class="normal">The Forbidden City is a complex in Beijing</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+

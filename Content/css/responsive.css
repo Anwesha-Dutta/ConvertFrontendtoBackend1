@@ -1,0 +1,1287 @@
+@media(max-width:1199px) {
+    .fifthpart .container .rotate {
+
+        right: -110px;
+    }
+
+    .fourthpart .container .leftone .rotate {
+        right: -110px;
+    }
+
+
+
+    .fifthpart .container .rotate1 {
+        right: -110px;
+    }
+
+    footer .upperpart button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-next {
+        right: 0;
+    }
+}
+
+
+@media(max-width:991px) {
+    .banner .owl-carousel .owl-nav .owl-next {
+        right: 0;
+    }
+
+    .secondpart .againflex .secondpartright .flextwo .ul-one li {
+
+        display: none;
+    }
+
+    header .secondpart .againflex .mobile-menu {
+        display: block;
+    }
+
+    header .secondpart .againflex .mobile-menu button {
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+    }
+
+    .container .flex .left {
+        text-align: center;
+    }
+
+    .container .flex .left {
+        width: 100%;
+    }
+
+    .container .flex .right {
+        width: 100%;
+    }
+
+    .container .right .liflex .ul {
+        justify-content: center;
+    }
+
+    .container .right .liflex .ul .class {
+        padding-left: 0;
+        margin-right: 10px;
+    }
+
+    .container .flex .left .leftone {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .container .flex .left .lefttwo {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .container .flex .right .liflex li {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    .container .flex .right .liflex li:last-child {
+        padding-left: 0px;
+    }
+
+    .banner .img img {
+        height: 320px;
+    }
+
+    .banner .owl-carousel.owl-theme .item .text {
+        padding-top: 114px;
+    }
+
+    .banner .owl-carousel.owl-theme .item p {
+        font-size: 15px;
+
+    }
+
+    .banner .owl-carousel.owl-theme .item h1 {
+        font-size: 42px;
+        color: #ffffff;
+    }
+
+    .fourthpart .container .leftone h1 {
+        font-size: 35px;
+    }
+
+
+    .fourthpart .container .leftone p {
+        font-size: 18px;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 145px;
+    }
+
+    .fourthpart .container .flexleftright {
+        flex-wrap: wrap;
+    }
+
+    .fourthpart .container .leftone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone .content {
+
+        margin-top: 50px;
+    }
+
+    .fourthpart .container .rightone .content {
+        padding: 18px 37px;
+    }
+
+
+    .fourthpart {
+
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .fourthpart .container .rightone h1 {
+        font-size: 27px;
+    }
+
+    .fourthpart .container .leftone .imgflex .col {
+        width: 100%;
+    }
+
+    .fourthpart .container .leftone .imgflex {
+        flex-wrap: wrap;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 400px;
+    }
+
+    .fourthpart .container .leftone .rotate {
+        right: -400px;
+    }
+
+
+    .fourthpart .container .leftone .imgflex .col {
+        margin-bottom: 20px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .flexthree h5 {
+        font-size: 17px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .flexthree .symbol {
+        font-size: 18px;
+
+    }
+
+    .fifthpart .container .rotate {
+
+        right: -105px;
+    }
+
+    .fifthpart .container .rotate1 {
+
+        right: -101px;
+
+    }
+
+    .fifthpart .container .fleximage2 .picture .class .flexthree h5 {
+        font-size: 17px;
+
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-next {
+
+        right: 0;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    footer .upperpart h2 {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    footer .upperpart button {
+        padding: 21px 15px;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    footer .middlepart {
+        padding-top: 50px;
+    }
+
+    footer .middlepart .container li {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    footer .lastpart .container .copy {
+        font-size: 12px;
+
+    }
+
+
+    footer .lastpart .container .flexicon i {
+        padding-right: 14px;
+    }
+
+    footer .middlepart .container li .lipara {
+        font-size: 18px;
+    }
+
+    footer .middlepart .container .first {
+        font-size: 14px;
+    }
+
+    footer .middlepart .container li .secondpara {
+        font-size: 18px;
+    }
+
+    footer .middlepart .container li {
+        font-size: 26px;
+    }
+
+    footer .lastpart .container .totalflex {
+
+        flex-wrap: wrap;
+    }
+
+    footer .middlepart .container li .date {
+        font-size: 14px;
+    }
+
+    footer .middlepart li .flexgallary1 img:last-child {
+        padding-right: 15px;
+        margin-right: -15px;
+    }
+
+    footer .middlepart li .flexgallary1 {
+        margin-right: -15px;
+    }
+
+    footer .middlepart li .flexgallary2 {
+        margin-right: -15px;
+    }
+
+    /* footer .middlepart li .flexgallary2 img:last-child {
+        margin-right: -15px;
+
+    } */
+
+    footer .middlepart li .flexgallary1 {
+
+        margin-top: 16px;
+    }
+
+    footer .middlepart li .flexgallary1 img {
+
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    footer .middlepart li .flexgallary2 img {
+
+        object-fit: cover;
+    }
+
+    footer .upperpart .container .flextype {
+
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:767px) {
+
+    header .secondpart .againflex .mobile-menu {
+        display: none;
+    }
+
+    .secondpart .secondpartright {
+        display: none;
+    }
+
+
+
+    .banner .search .container form {
+        display: none;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-next {
+        right: 0;
+    }
+
+    footer .middlepart .container li {
+        width: 50%;
+    }
+
+    .fourthpart .container .leftone p {
+        font-size: 18px;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 145px;
+    }
+
+    .fourthpart .container .flexleftright {
+        flex-wrap: wrap;
+    }
+
+    .fourthpart .container .leftone .imgflex {
+
+        padding-right: 0px;
+
+    }
+
+    .fourthpart .container .leftone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone .content {
+
+        margin-top: 50px;
+    }
+
+    .fourthpart .container .rightone .content {
+        padding: 18px 37px;
+    }
+
+
+    .fourthpart {
+
+        padding-left: 21px;
+        padding-right: 21px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .fourthpart .container .rightone h1 {
+        font-size: 27px;
+    }
+
+    .fourthpart .container .leftone .imgflex .col {
+        width: 100%;
+    }
+
+    .fourthpart .container .leftone .imgflex {
+        flex-wrap: wrap;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 400px;
+    }
+
+    .fourthpart .container .leftone .rotate {
+        right: -290px;
+    }
+
+
+    .fourthpart .container .leftone .imgflex .col {
+        margin-bottom: 20px;
+    }
+
+    .fourthpart .container .rightone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone .content {
+
+        margin-top: 50px;
+    }
+
+    .fourthpart .container .rightone .content {
+        padding: 18px 37px;
+    }
+
+
+    .fifthpart h1 {
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    .fifthpart .container .rotate {
+        right: -318px;
+    }
+
+    .fifthpart p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .fifthpart .container .picture img {
+
+        object-fit: cover;
+    }
+
+    .fifthpart .container ul .flexul {
+        padding-bottom: 60px;
+    }
+
+    .fifthpart .container .flexul li {
+
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .fifthpart .container .picture img {
+        height: 250px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .flexthree h5 {
+        font-size: 21px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .flexthree .symbol {
+        font-size: 21px;
+    }
+
+    .fifthpart .container .picture {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .fifthpart .container .auto {
+        font-size: 16px;
+        margin-top: 56px;
+        padding-left: 20px;
+    }
+
+
+
+    .fifthpart .container .picture {
+        padding-right: 0;
+    }
+
+    .fifthpart p {
+        font-size: 18px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .ipsum {
+        font-size: 15px;
+    }
+
+    .fifthpart .container .fleximage span {
+
+        font-size: 18px
+    }
+
+    .fifthpart .container .fleximage2 .picture .class .flexthree h5 {
+        font-size: 21px;
+    }
+
+
+    .fifthpart .container .fleximage {
+        margin-bottom: 15px;
+    }
+
+
+    .fifthpart .container .rotate1 {
+        right: -220px;
+    }
+
+    .fifthpart .container .rotate {
+        right: -220px;
+    }
+
+    .fleximage2 .picture .class .flexthree .symbol {
+        font-size: 21px;
+    }
+
+    .sixthpart {
+        margin-top: 70px;
+    }
+
+
+    .sixthpart .playbutton {
+        height: 65px;
+        width: 65px;
+    }
+
+    .sixthpart h1 {
+
+        font-size: 40px;
+    }
+
+    .seventhpart .container h1 {
+        font-size: 36px;
+        margin-top: 70px;
+        line-height: 42px;
+
+    }
+
+    .seventhpart .container .bottom {
+        font-size: 16px;
+    }
+
+
+    .seventhpart .container .bottom {
+        font-size: 18px;
+        margin-bottom: 65px;
+    }
+
+    .seventhpart .container .pic .para img {
+        height: 180px;
+    }
+
+    .seventhpart .container .pic .para h2 {
+        font-size: 16px;
+    }
+
+    .seventhpart .container .pic .para p {
+        font-size: 12px;
+    }
+
+    .seventhpart .container .rightpart .ipsum {
+        font-size: 18px;
+    }
+
+
+    .seventhpart {
+
+        padding-bottom: 60px;
+    }
+
+    .seventhpart .leftpart {
+        width: 100%;
+    }
+
+    .seventhapart .rightpart {
+        width: 100%;
+    }
+
+    .eightpart .container h1 {
+        font-size: 36px;
+        margin-top: 75px;
+
+    }
+
+    .eightpart .container p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-next {
+
+        right: 0;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    footer .upperpart h2 {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    footer .upperpart button {
+        padding: 21px 15px;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    footer .middlepart {
+        padding-top: 50px;
+    }
+
+    footer .middlepart .container li {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    footer .lastpart .container .copy {
+        font-size: 12px;
+
+    }
+
+
+    footer .lastpart .container .flexicon i {
+        padding-right: 14px;
+    }
+
+    footer .middlepart .container li .lipara {
+        font-size: 18px;
+    }
+
+    footer .middlepart .container .first {
+        font-size: 14px;
+    }
+
+    footer .middlepart .container li .secondpara {
+        font-size: 18px;
+    }
+
+    footer .middlepart .container li {
+        font-size: 26px;
+    }
+
+    footer .lastpart .container .totalflex {
+
+        flex-wrap: wrap;
+    }
+
+    footer .middlepart .container li .date {
+        font-size: 14px;
+    }
+
+    .fifthpart .container .fleximage {
+
+        flex-wrap: wrap;
+
+    }
+
+    footer .middlepart li .flexgallary1 {
+
+        margin-top: 16px;
+    }
+
+    footer .middlepart li .flexgallary1 img {
+
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    footer .middlepart li .flexgallary2 img {
+
+        object-fit: cover;
+    }
+
+    footer .upperpart .container .flextype {
+
+        flex-wrap: wrap;
+    }
+
+    .fifthpart p {
+        font-size: 18px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .ipsum {
+        font-size: 15px;
+    }
+
+    .fifthpart .container .fleximage span {
+
+        font-size: 18px
+    }
+
+    .fifthpart .container .fleximage2 .picture .class .flexthree h5 {
+        font-size: 21px;
+    }
+
+
+    .fifthpart .container .fleximage {
+        margin-bottom: 15px;
+    }
+
+
+    .fifthpart .container .rotate1 {
+        right: -220px;
+    }
+
+    .fifthpart .container .rotate {
+        right: -321px;
+    }
+
+    .fleximage2 .picture .class .flexthree .symbol {
+        font-size: 21px;
+    }
+
+    footer .middlepart li .twitter .follow {
+        font-size: 16px;
+    }
+
+    footer .lastpart .container .copy {
+        font-size: 14px;
+    }
+
+    footer .lastpart {
+        border-top: 1px solid #6b6b6b;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 0;
+    }
+
+
+    footer .middlepart {
+        margin-bottom: 50px;
+    }
+
+
+    .seventhpart .container .pic .imageflex {
+        flex-wrap: wrap;
+    }
+
+    .seventhpart .container .pic .imageflex .para {
+        width: 100%;
+    }
+
+    .seventhpart .container .pic .para img {
+        height: 266px;
+    }
+
+    .seventhpart .container .pic .para h2 {
+        font-size: 24px;
+    }
+
+    .seventhpart .container .pic .para p {
+        font-size: 18px;
+    }
+
+    .seventhpart .container .flexagain {
+
+        flex-wrap: wrap;
+    }
+
+    .seventhpart .container .pic .imageflex .para {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .seventhpart .rightpart {
+        width: 100%;
+
+    }
+
+
+}
+
+
+
+
+
+@media (max-width:575px) {
+    .container .flex .left {
+        width: 100%;
+    }
+
+    .container .flex .right {
+        width: 100%;
+    }
+
+    .container .right .liflex .ul {
+        justify-content: center;
+    }
+
+    .container .right .liflex .ul .class {
+        padding-left: 0;
+        margin-right: 10px;
+    }
+
+    .container .flex .left .leftone {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .container .flex .left .lefttwo {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .container .flex .right .liflex li {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    .container .flex .right .liflex li:last-child {
+
+        padding-left: 0px;
+    }
+
+
+    header .secondpart .againflex .mobile-menu {
+        display: none;
+    }
+
+    .banner .img img {
+        height: 320px;
+    }
+
+    .banner .owl-carousel.owl-theme .item .text {
+        padding-top: 114px;
+    }
+
+    .banner .owl-carousel.owl-theme .item p {
+        font-size: 15px;
+
+    }
+
+    .banner .owl-carousel.owl-theme .item h1 {
+        font-size: 42px;
+        color: #ffffff;
+    }
+
+    .secondpart .container .againflex {
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .thirdpart .container h1 {
+
+        font-size: 36px;
+
+    }
+
+    .thirdpart .container .another {
+
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .fourthpart .container .leftone h1 {
+        font-size: 35px;
+    }
+
+
+    .fourthpart .container .leftone p {
+        font-size: 18px;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 145px;
+    }
+
+    .fourthpart .container .flexleftright {
+        flex-wrap: wrap;
+    }
+
+    .fourthpart .container .leftone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone {
+        width: 100%;
+    }
+
+    .fourthpart .container .rightone .content {
+
+        margin-top: 50px;
+    }
+
+    .fourthpart .container .rightone .content {
+        padding: 18px 37px;
+    }
+
+
+    .fourthpart {
+
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .fourthpart .container .rightone h1 {
+        font-size: 27px;
+    }
+
+    .fourthpart .container .leftone .imgflex .col {
+        width: 100%;
+    }
+
+    .fourthpart .container .leftone .imgflex {
+        flex-wrap: wrap;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 400px;
+    }
+
+    .fourthpart .container .leftone .rotate {
+        right: -195px;
+    }
+
+
+    .fourthpart .container .leftone .imgflex .col {
+        margin-bottom: 20px;
+    }
+
+
+    .fifthpart h1 {
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    .fifthpart p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .fifthpart .container ul .flexul {
+        padding-bottom: 60px;
+    }
+
+    .fifthpart .container .flexul li {
+
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .fifthpart .container .picture img {
+        height: 250px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .flexthree h5 {
+        font-size: 21px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .flexthree .symbol {
+        font-size: 21px;
+    }
+
+    .fifthpart .container .picture {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .fifthpart .container .auto {
+        font-size: 16px;
+        margin-top: 56px;
+        padding-left: 20px;
+    }
+
+
+
+    .fifthpart .container .picture {
+        padding-right: 0;
+    }
+
+    .sixthpart {
+        margin-top: 70px;
+    }
+
+
+    .sixthpart .playbutton {
+        height: 65px;
+        width: 65px;
+    }
+
+    .sixthpart h1 {
+
+        font-size: 40px;
+    }
+
+    .seventhpart .container h1 {
+        font-size: 36px;
+        margin-top: 70px;
+        line-height: 42px;
+
+    }
+
+    .seventhpart .container .bottom {
+        font-size: 16px;
+    }
+
+
+    .seventhpart .container .bottom {
+        font-size: 18px;
+        margin-bottom: 65px;
+    }
+
+    .seventhpart .container .pic .para img {
+        height: 180px;
+    }
+
+    .seventhpart .container .pic .para h2 {
+        font-size: 16px;
+    }
+
+    .seventhpart .container .pic .para p {
+        font-size: 12px;
+    }
+
+    .seventhpart .container .rightpart .ipsum {
+        font-size: 16px;
+    }
+
+
+    .seventhpart {
+
+        padding-bottom: 60px;
+    }
+
+    .seventhpart .leftpart {
+        width: 100%;
+    }
+
+    .seventhapart .rightpart {
+        width: 100%;
+    }
+
+    .eightpart .container h1 {
+        font-size: 36px;
+        margin-top: 75px;
+
+    }
+
+    .eightpart .container p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-next {
+
+        right: 0;
+    }
+
+    .eightpart .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    footer .upperpart h2 {
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    footer .upperpart button {
+        padding: 21px 15px;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    footer .middlepart {
+        padding-top: 20px;
+    }
+
+    footer .middlepart .container li {
+        padding-top: 32px;
+        width: 100%;
+    }
+
+    footer .lastpart .container .copy {
+        font-size: 12px;
+
+    }
+
+
+    footer .lastpart .container .flexicon i {
+        padding-right: 14px;
+    }
+
+    footer .middlepart .container li .lipara {
+        font-size: 18px;
+    }
+
+    footer .middlepart .container .first {
+        font-size: 14px;
+    }
+
+    footer .middlepart .container li .secondpara {
+        font-size: 18px;
+    }
+
+    footer .middlepart .container li {
+        font-size: 26px;
+    }
+
+    footer .lastpart .container .totalflex {
+
+        flex-wrap: wrap;
+    }
+
+    footer .middlepart .container li .date {
+        font-size: 14px;
+    }
+
+    .fifthpart .container .fleximage {
+
+        flex-wrap: wrap;
+
+    }
+
+    footer .middlepart li .flexgallary1 {
+
+        margin-top: 16px;
+    }
+
+    footer .middlepart li .flexgallary1 img {
+
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    footer .middlepart li .flexgallary2 img {
+
+        object-fit: cover;
+    }
+
+    footer .upperpart .container .flextype {
+
+        flex-wrap: wrap;
+    }
+
+    .fifthpart p {
+        font-size: 18px;
+    }
+
+    .fifthpart .container .fleximage .picture .class .ipsum {
+        font-size: 15px;
+    }
+
+    .fifthpart .container .fleximage span {
+
+        font-size: 18px
+    }
+
+    .fifthpart .container .fleximage2 .picture .class .flexthree h5 {
+        font-size: 21px;
+    }
+
+
+    .fifthpart .container .fleximage {
+        margin-bottom: 15px;
+    }
+
+
+    .fifthpart .container .rotate1 {
+        right: -220px;
+    }
+
+    .fifthpart .container .rotate {
+        right: -220px;
+    }
+
+    .fleximage2 .picture .class .flexthree .symbol {
+        font-size: 21px;
+    }
+
+    footer .middlepart li .twitter .follow {
+        font-size: 16px;
+    }
+
+    footer .lastpart .container .copy {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    footer .lastpart {
+        border-top: 1px solid #6b6b6b;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 0;
+    }
+
+
+    footer .middlepart {
+        margin-bottom: 50px;
+    }
+
+
+    .seventhpart .container .pic .imageflex {
+        flex-wrap: wrap;
+    }
+
+    .seventhpart .container .pic .imageflex .para {
+        width: 100%;
+    }
+
+    .seventhpart .container .pic .para img {
+        height: 266px;
+    }
+
+    .seventhpart .container .pic .para h2 {
+        font-size: 24px;
+    }
+
+    .seventhpart .container .pic .para p {
+        font-size: 15px;
+    }
+
+    .seventhpart .container .flexagain {
+
+        flex-wrap: wrap;
+    }
+
+    .seventhpart .container .pic .imageflex .para {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .seventhpart .rightpart {
+        width: 100%;
+
+    }
+}
+
+@media(max-width:320px) {
+    .container .flex .left {
+        flex-wrap: wrap;
+    }
+
+    .container .flex .left span {
+        width: 100%;
+        display: block;
+    }
+
+    .container .flex .left span:last-child {
+        padding-left: 0;
+    }
+
+    .banner .owl-carousel.owl-theme .item p {
+        font-size: 13px;
+    }
+
+
+    .banner .owl-carousel.owl-theme .item h1 {
+        font-size: 35px;
+    }
+
+    .thirdpart .container h1 {
+        padding-top: 35px;
+        font-size: 31px;
+    }
+
+    .fourthpart .container .leftone .imgflex .image img {
+        height: 314px;
+    }
+
+    .fourthpart .container .leftone h1 {
+        font-size: 27px;
+    }
+
+    .fifthpart h1 {
+        margin-top: 65px;
+        font-size: 29px;
+    }
+
+    .fifthpart p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .fifthpart .contianer .flexul li {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .container .flex .left span:last-child {
+
+        margin-top: 10px;
+    }
+
+
+
+}

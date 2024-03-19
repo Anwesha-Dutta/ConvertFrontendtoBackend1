@@ -21,7 +21,7 @@ namespace ConvertFrontendtoBackend1.Controllers
             using (SqlConnection connection = new SqlConnection(Constring))
             {
                
-                SqlCommand command = new SqlCommand("select [banner_id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
+                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();

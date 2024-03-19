@@ -26,7 +26,7 @@ namespace ConvertFrontendtoBackend1.Controllers
             using (SqlConnection connection = new SqlConnection(Constring))
             {
 
-                SqlCommand command = new SqlCommand("select [banner_id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
+                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();
@@ -67,18 +67,73 @@ namespace ConvertFrontendtoBackend1.Controllers
 
                     command.Parameters.AddWithValue("@banner_subdescription", banner.banner_subdescription);
                     command.Parameters.AddWithValue("@banner_description", banner.banner_description);
-                    command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces/" + banner.banner_image);
+                    command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces" + banner.banner_image);
 
 
                     command.ExecuteNonQuery();
-                 
 
                 }
             }
-        
+
             return View();
         }
-          
+
+        [HttpGet]
+
+        public ActionResult Delete(int id)
+        {
+            string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+            List<banner> list = new List<banner>();
+            using (SqlConnection connection = new SqlConnection(Constring))
+            {
+                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new banner
+                        {
+                            id = reader.GetInt32(0),
+                            banner_subdescription = reader.GetString(1),
+                            banner_description = reader.GetString(2),
+                            banner_image = reader.GetString(3)
+
+                        });
+
+                    }
+                    reader.Close();
+                }
+            }
+
+            ViewBag.list = list;
+            return View();
+        }
+
+        [HttpPost]
+
+        public ActionResult Delete(int id,banner banner)
+
+        {
+            string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(Constring))
+            {
+
+                SqlCommand command = new SqlCommand("delete from banner where id =@id" , connection);
+                connection.Open();
+
+                command.Parameters.AddWithValue("@id",banner.id);
+                command.ExecuteNonQuery();
+
+            }
+
+
+            return View();
+
         }
     }
+}
 

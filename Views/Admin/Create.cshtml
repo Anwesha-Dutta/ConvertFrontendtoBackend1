@@ -17,8 +17,8 @@
   
     <div class="card">
         <div class="card-body">
-    @using (Html.BeginForm("Create", "Admin", FormMethod.Post,new { enctype= "multipart/form-data"}))
-    {
+    @using (Html.BeginForm("Create", "Admin", FormMethod.Post))
+	{
         @Html.AntiForgeryToken()
 
 <div class="form-horizontal">

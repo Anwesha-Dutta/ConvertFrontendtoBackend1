@@ -67,7 +67,7 @@ namespace ConvertFrontendtoBackend1.Controllers
 
                     command.Parameters.AddWithValue("@banner_subdescription", banner.banner_subdescription);
                     command.Parameters.AddWithValue("@banner_description", banner.banner_description);
-                    command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces" + banner.banner_image);
+                    command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces/" + banner.banner_image);
 
 
                     command.ExecuteNonQuery();

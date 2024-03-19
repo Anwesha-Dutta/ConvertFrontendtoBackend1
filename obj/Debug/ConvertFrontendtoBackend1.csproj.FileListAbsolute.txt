@@ -141,4 +141,3 @@ C:\Users\Administrator\Desktop\ADO.NET MVC PROJECT\ASP.NET-MVC\ConvertFrontendto
 C:\Users\Administrator\Desktop\ADO.NET MVC PROJECT\ASP.NET-MVC\ConvertFrontendtoBackend1\obj\Debug\ConvertFrontendtoBackend1.csproj.CopyComplete
 C:\Users\Administrator\Desktop\ADO.NET MVC PROJECT\ASP.NET-MVC\ConvertFrontendtoBackend1\obj\Debug\ConvertFrontendtoBackend1.dll
 C:\Users\Administrator\Desktop\ADO.NET MVC PROJECT\ASP.NET-MVC\ConvertFrontendtoBackend1\obj\Debug\ConvertFrontendtoBackend1.pdb
-C:\Users\Administrator\Desktop\ADO.NET MVC PROJECT\ASP.NET-MVC\ConvertFrontendtoBackend1\obj\Debug\ConvertFrontendtoBackend1.csproj.AssemblyReference.cache

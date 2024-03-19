@@ -22,11 +22,11 @@ namespace ConvertFrontendtoBackend1.Controllers
             string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
             using (SqlConnection connection = new SqlConnection(Constring))
             {
-                if(data.Username != null)
+                if(data.Username != null && data.Password != null)
                 {
-                    SqlCommand command = new SqlCommand("select * from Login Where Username = @Username", connection);
+                    SqlCommand command = new SqlCommand("select * from Login Where Username = @Username AND Password = @Password", connection);
                     command.Parameters.AddWithValue("@Username", data.Username);
-                    //command.Parameters.AddWithValue("@Password", data.Password);
+                    command.Parameters.AddWithValue("@Password", data.Password);
                     connection.Open();
                     SqlDataReader reader = command.ExecuteReader();
 
@@ -44,7 +44,11 @@ namespace ConvertFrontendtoBackend1.Controllers
                     {
                         Session["Error"] = "Credential not found";
                     }
-                }                
+                }
+                else
+                {
+                    Session["Error"] = "Fields should not be empty";
+                }
             }
             // return View();
             return RedirectToAction("Index");

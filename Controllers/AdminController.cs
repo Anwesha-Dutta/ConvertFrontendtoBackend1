@@ -77,7 +77,6 @@ namespace ConvertFrontendtoBackend1.Controllers
 
             return View();
         }
-
         [HttpGet]
 
         public ActionResult Delete(int id)

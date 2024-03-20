@@ -72,7 +72,9 @@ namespace ConvertFrontendtoBackend1.Controllers
 
                     command.ExecuteNonQuery();
 
+                    return RedirectToAction("Banner");
                 }
+                
             }
 
             return View();
@@ -130,7 +132,7 @@ namespace ConvertFrontendtoBackend1.Controllers
 
             }
 
-            return RedirectToAction("Admin","Banner");
+            return RedirectToAction("Banner");
             return View();
 
         }

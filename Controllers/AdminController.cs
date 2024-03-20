@@ -26,7 +26,7 @@ namespace ConvertFrontendtoBackend1.Controllers
             using (SqlConnection connection = new SqlConnection(Constring))
             {
 
-                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
+                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner ", connection);
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();
@@ -85,9 +85,10 @@ namespace ConvertFrontendtoBackend1.Controllers
             List<banner> list = new List<banner>();
             using (SqlConnection connection = new SqlConnection(Constring))
             {
-                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner", connection);
+                SqlCommand command = new SqlCommand("select [id],[banner_subdescription], [banner_description],[banner_image] from banner where id=@id", connection);
+                command.Parameters.AddWithValue("@id", id);
                 connection.Open();
-
+                
                 SqlDataReader reader = command.ExecuteReader();
 
                 if (reader.HasRows)
@@ -129,9 +130,66 @@ namespace ConvertFrontendtoBackend1.Controllers
 
             }
 
-
+            return RedirectToAction("Admin","Banner");
             return View();
 
+        }
+
+        [HttpGet]
+        public ActionResult Update(int id)
+        {
+            banner banner = null;
+            string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(Constring))
+            {
+                SqlCommand command = new SqlCommand("select[id],[banner_subdescription], [banner_description],[banner_image] from banner where id = @id", connection);
+                command.Parameters.AddWithValue("@id", id);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    banner = new banner
+                    {
+                        id = reader.GetInt32(0),
+                        banner_subdescription = reader.GetString(1),
+                        banner_description = reader.GetString(2),
+                        banner_image = reader.GetString(3)
+                    };
+
+                }
+                reader.Close();
+            }
+            return View(banner);
+        }
+
+        [HttpPost]
+        public ActionResult Update(int id, banner banner)
+        {
+            try
+            {
+                string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(Constring))
+                {
+                    SqlCommand command = new SqlCommand("update [banner] set [banner_subdescription]=@banner_subdescription, [banner_description]=@banner_description,[banner_image]=@banner_image] where id=@id", connection);
+                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.AddWithValue("@banner_subdescription", banner.banner_subdescription);
+                    command.Parameters.AddWithValue("@banner_description", banner.banner_description);
+                    command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces/" + banner.banner_image);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                }
+                return RedirectToAction("Banner");
+            }
+
+            catch
+            {
+                return View();
+            }
         }
     }
 }

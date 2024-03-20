@@ -173,7 +173,7 @@ namespace ConvertFrontendtoBackend1.Controllers
                 string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
                 using (SqlConnection connection = new SqlConnection(Constring))
                 {
-                    SqlCommand command = new SqlCommand("update [banner] set [banner_subdescription]=@banner_subdescription, [banner_description]=@banner_description,[banner_image]=@banner_image] where id=@id", connection);
+                    SqlCommand command = new SqlCommand("update [banner] set [banner_subdescription]=@banner_subdescription, [banner_description]=@banner_description,[banner_image]=@banner_image where id=@id", connection);
                     command.Parameters.AddWithValue("@id", id);
                     command.Parameters.AddWithValue("@banner_subdescription", banner.banner_subdescription);
                     command.Parameters.AddWithValue("@banner_description", banner.banner_description);

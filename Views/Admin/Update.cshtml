@@ -36,7 +36,7 @@
 	<div class="form-group">
 		@Html.LabelFor(model => model.banner_image, htmlAttributes: new { @class = "control-label col-md-2" })
 		<div class="col-md-10">
-			@Html.EditorFor(model => model.banner_image, new { htmlAttributes = new { @class = "form-control" } })
+			@Html.EditorFor(model => model.banner_image, new { htmlAttributes = new { @class = "form-control" ,@type ="file"} })
 			@Html.ValidationMessageFor(model => model.banner_image, "", new { @class = "text-danger" })
 		</div>
 	</div>

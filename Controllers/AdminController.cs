@@ -12,6 +12,8 @@ namespace ConvertFrontendtoBackend1.Controllers
 {
     public class AdminController : Controller
     {
+        private banner getbanner;
+
         // GET: Admin
         public ActionResult Index()
         {
@@ -170,18 +172,46 @@ namespace ConvertFrontendtoBackend1.Controllers
         [HttpPost]
         public ActionResult Update(int id, banner banner)
         {
+            banner getbanner = null;
             try
             {
                 string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+
                 using (SqlConnection connection = new SqlConnection(Constring))
                 {
+                    SqlCommand getcommand = new SqlCommand("select[id],[banner_subdescription], [banner_description],[banner_image] from banner where id = @id", connection);
+                    getcommand.Parameters.AddWithValue("@id", id);
+                   
+                    
                     SqlCommand command = new SqlCommand("update [banner] set [banner_subdescription]=@banner_subdescription, [banner_description]=@banner_description,[banner_image]=@banner_image where id=@id", connection);
+                    
+
+                    connection.Open();
+                    SqlDataReader reader = getcommand.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        getbanner = new banner
+                        {
+                            id = reader.GetInt32(0),
+                            banner_subdescription = reader.GetString(1),
+                            banner_description = reader.GetString(2),
+                            banner_image = reader.GetString(3)
+
+                        };
+                    }
                     command.Parameters.AddWithValue("@id", id);
                     command.Parameters.AddWithValue("@banner_subdescription", banner.banner_subdescription);
                     command.Parameters.AddWithValue("@banner_description", banner.banner_description);
-                    command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces/" + banner.banner_image);
-
-                    connection.Open();
+                    if (banner.banner_image!=null && banner.banner_image.Length>0)
+                    {
+                        command.Parameters.AddWithValue("@banner_image", "Content/assets/images/faces/" + banner.banner_image);
+                    }
+                    else
+                    {
+                        command.Parameters.AddWithValue("@banner_image", getbanner.banner_image);
+                    }
                     command.ExecuteNonQuery();
 
                 }

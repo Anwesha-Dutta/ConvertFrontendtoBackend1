@@ -14,44 +14,68 @@ namespace ConvertFrontendtoBackend1.Controllers
         // GET: Login
         public ActionResult Index()
         {
+          // Retrieve ModelState from TempData
+    ModelStateDictionary modelState = TempData["ModelState"] as ModelStateDictionary;
+
+            if (modelState != null)
+            {
+                // Transfer ModelState to the current ModelState
+                ModelState.Merge(modelState);
+            }
+
+            return View();
+        }
+        [HttpGet]
+        public ActionResult Login()
+        {
             return View();
         }
 
+        [HttpPost]
         public ActionResult Login(Login data)
         {
-            string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(Constring))
+            if (ModelState.IsValid)
             {
-                if(data.Username != null && data.Password != null)
+                string Constring = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(Constring))
                 {
-                    SqlCommand command = new SqlCommand("select * from Login Where Username = @Username AND Password = @Password", connection);
-                    command.Parameters.AddWithValue("@Username", data.Username);
-                    command.Parameters.AddWithValue("@Password", data.Password);
-                    connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    if (reader.HasRows)
+                    if (data.Username != null && data.Password != null)
                     {
-                        if (reader.Read())
+                        SqlCommand command = new SqlCommand("select * from Login Where Username = @Username AND Password = @Password", connection);
+                        command.Parameters.AddWithValue("@Username", data.Username);
+                        command.Parameters.AddWithValue("@Password", data.Password);
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.HasRows)
                         {
-                            Session["Username"] = reader["Username"];
+                            if (reader.Read())
+                            {
+                                Session["Username"] = reader["Username"];
+                            }
+
+                            Session.Remove("Error");
+                            return RedirectToAction("Welcome");
                         }
-                       
-                        Session.Remove("Error");
-                        return RedirectToAction("Welcome");
+                        else
+                        {
+                            Session["Error"] = "Credential not found";
+                        }
                     }
                     else
                     {
-                        Session["Error"] = "Credential not found";
+                        Session["Error"] = "Fields should not be empty";
                     }
                 }
-                else
-                {
-                    Session["Error"] = "Fields should not be empty";
-                }
             }
-            // return View();
-            return RedirectToAction("Index");
+            else
+            {
+                TempData["ModelState"] = ModelState; // Save ModelState in TempData
+                return RedirectToAction("Index", "Login");
+            }
+          
+            //return View();
+           return RedirectToAction("Index");
         }
         public ActionResult Welcome()
         {

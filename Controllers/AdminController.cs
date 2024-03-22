@@ -201,6 +201,7 @@ namespace ConvertFrontendtoBackend1.Controllers
 
                         };
                     }
+                    reader.Close();
                     command.Parameters.AddWithValue("@id", id);
                     command.Parameters.AddWithValue("@banner_subdescription", banner.banner_subdescription);
                     command.Parameters.AddWithValue("@banner_description", banner.banner_description);
@@ -222,6 +223,7 @@ namespace ConvertFrontendtoBackend1.Controllers
             {
                 return View();
             }
+            // return View();
         }
     }
 }
